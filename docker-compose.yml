@@ -1,0 +1,10 @@
+services:
+  bookscrape:
+    build: .       # Construit l'image depuis le Dockerfile local
+    volumes:
+      # src/ monté en lecture : permet de modifier le code sans reconstruire l'image.
+      # Les fichiers .pyc ne sont pas écrits grâce à PYTHONDONTWRITEBYTECODE=1.
+      - ./src:/app/src
+
+      # DATA/ reçoit le fichier books.csv généré par la pipeline.
+      # Persistant sur l'hôte : les données survivent aux red�
