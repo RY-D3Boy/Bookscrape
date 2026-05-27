@@ -1,4 +1,4 @@
-# 📚 Bookscrape2
+# 📚 Bookscrape
 
 Pipeline ETL automatisée et containerisée pour extraire, transformer et sauvegarder les données du site [books.toscrape.com](https://books.toscrape.com).
 
